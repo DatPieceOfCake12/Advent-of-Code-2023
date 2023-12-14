@@ -33,7 +33,7 @@ def partOne():
                     except ValueError:
                         break
                     else:
-                        currentNum += line[charIndex+numIndex]
+                         currentNum += line[charIndex+numIndex]
                         numIndex += 1
                 print(f"current num = {currentNum}")
 
@@ -55,6 +55,13 @@ def partOne():
                                 skipline = len(currentNum)
                                 fullbreak = True
     return finalValue
+
+def AltpartOne():
+   symbols = ['+','*','-','=','&','/','@','#','%','$']
+   mapArray= [140*""]*lines.count()
+   
+
+
 
 print(partOne())
 
